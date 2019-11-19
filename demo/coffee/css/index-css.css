@@ -1,0 +1,521 @@
+/* 头部部分开始 */
+.header{
+    width: 100%;
+    height: 90px;
+    background: rgba(0, 0, 0, 0.6);
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 999;
+}
+.header-in{
+    width: 950px;
+    height: 100%;
+    margin: 0 auto;
+}
+.logo{
+    width: 140px;
+    height: 90px;
+    background: #fff url("../images/logo.png") no-repeat center center;
+    background-size: 60px;
+    position: absolute;
+    left: 50%;
+    top: 0;
+    transform: translateX(-50%);
+}
+.header-in>ul>li{
+    float: left;
+    margin-right: 60px;
+    line-height: 90px;
+    font-size: 14px;
+    color: #fff;
+    transition: color 0.5s;
+    cursor: pointer;
+    position: relative;
+}
+.header-in>.fr>li{
+    margin-right: 0;
+    margin-left: 60px;
+}
+.header-hidden{
+    position: absolute;
+    top: 120px;
+    left: 0;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.5s, top 0.5s;
+}
+.header-hidden>li{
+    width: 170px;
+    height: 50px;
+    border-bottom: 1px solid #aaa;
+    box-sizing: border-box;
+    background: rgba(0, 0, 0, 0.6);
+    line-height: 50px;
+    font-size: 12px;
+    color: #ccc;
+    padding-left: 20px;
+    cursor: pointer;
+    transition: color 0.5s, padding 0.5s;
+}
+.header-hidden>li:first-child{
+    border-top: 3px solid #aaa;
+}
+/* 头部部分结束 */
+
+/* 广告部分开始 */
+.banner{
+    width: 100%;
+    height: 850px;
+    overflow: hidden;
+    position: relative;
+}
+.banner>ul{
+    width: 400%;
+    height: 100%;
+    animation: banner 12s ease-in-out infinite normal;
+}
+.banner>ul>li{
+    float: left;
+    width: 25%;
+    height: 100%;
+    background: url("../images/banner2.jpg") no-repeat top center;
+    background-size: cover !important;
+}
+.banner>ul>li:nth-child(2){
+    background: url("../images/1.2.jpg") no-repeat top center;
+}
+.banner>ul>li:nth-child(3){
+    background: url("../images/1.3.jpg") no-repeat top center;
+}
+.banner>ul>li:nth-child(4){
+    background: url("../images/1.4.jpg") no-repeat top center;
+}
+.banner>a{
+    display: block;
+    width: 50px;
+    height: 90px;
+    background: rgba(0, 0, 0, 0.6);
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 30px;
+    text-align: center;
+    line-height: 90px;
+    color: #fff;
+}
+.banner>a:nth-last-child(2){
+    left: 0;
+}
+.banner>a:last-child{
+    right: 0;
+}
+/* 广告部分结束 */
+
+/* 内容部分开始 */
+/* 内容第一部分开始 */
+.coffeebeans{
+    width: 100%;
+    height: 800px;
+    background: #ede2de url("../images/2.1.png") no-repeat left top;
+    background-size: 200px;
+    padding-top: 70px;
+    box-sizing: border-box;
+}
+.coffeebeans .content{
+    width: 100%;
+    height: 520px;
+    display: flex;
+    justify-content: space-between;
+}
+.coffeebeans .content>li{
+    width: 32%;
+    height: 100%;
+    background: #fff;
+    text-align: center;
+}
+.coffeebeans .content>li>img{
+    height: 210px;
+    width: 100%;
+    object-fit: cover;
+    object-position: center top;
+}
+.coffeebeans .content>li>span{
+    width: 250px;
+    height: 50px;
+    line-height: 50px;
+    color: #fff;
+    font-size: 18px;
+    display: inline-block;
+    background: #d5995e;
+    border: 1px solid #fff;
+    box-shadow: #d5995e 0px 0px 0px 3px;
+    margin: -16px 0 50px 0;
+}
+.coffeebeans .content>li>p{
+    text-align: left;
+    padding-left: 65px;
+    margin-bottom: 7px;
+}
+.coffeebeans .content>li>p>span{
+    margin-right: 20px;
+    color: rgb(53, 151, 143);
+}
+.coffeebeans .content>li>a{
+    width: 150px;
+    height: 40px;
+    margin-top: 35px;
+    color: #fff;
+    line-height: 40px;
+    background: rgb(53, 151, 143);
+    display: inline-block;
+    border-radius: 8px;
+    transition: background 0.5s;
+}
+/* 内容第一部分结束 */
+
+/* 内容第二部分开始 */
+.coffee{
+    width: 100%;
+    height: 700px;
+    padding-top: 60px;
+    box-sizing: border-box;
+}
+.coffee .content{
+    width: 100%;
+    height: 420px;
+    display: flex;
+    justify-content: space-between;
+}
+.coffee .content li{
+    width: 22%;
+    height: 100%;
+    background: url("../images/3.1.jpg") no-repeat center center;
+    background-size: cover !important;
+    box-shadow: #ddd 0 0 5px 1px;
+    padding: 90px 20px;
+    box-sizing: border-box;
+    cursor: pointer;
+}
+.coffee .content li:nth-child(2){
+    background: url("../images/3.2.jpg") no-repeat center center;
+}
+.coffee .content li:nth-child(3){
+    background: url("../images/3.3.jpg") no-repeat center center;
+}
+.coffee .content li:nth-child(4){
+    background: url("../images/3.4.jpg") no-repeat center center;
+}
+.coffee .text{
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    text-align: center;
+    box-sizing: border-box;
+    transition: background 1s;
+    padding-top: 35px;
+}
+.coffee .text>h3{
+    color: #fff;
+    margin-bottom: 40px;
+    position: relative;
+    bottom: -260px;
+    transition: bottom 0.5s;
+}
+.coffee .text>p{
+    color: #eee;
+    opacity: 0;
+    transition: opacity 1s;
+}
+/* 内容第二部分结束 */
+
+/* 内容第三部分开始 */
+.content-three{
+    width: 100%;
+    height: 870px;
+    background: rgba(134, 175, 172, 0.6);
+    padding-top: 50px;
+}
+.content-three .base-title{
+    margin-bottom: 50px;
+}
+.content-three .content{
+    width: 100%;
+    height: 700px;
+    background: #000;
+}
+.content-three .content>li{
+    float: left;
+    width: 25%;
+    height: 50%;
+    background: green url("../images/4.1.jpg") no-repeat center center;
+    background-size: cover !important;
+    transition: opacity 0.5s;
+    cursor: pointer;
+}
+.content-three .content>li:nth-child(2){
+    background: green url("../images/4.2.jpg") no-repeat center center;
+}
+.content-three .content>li:nth-child(3){
+    background: green url("../images/4.3.jpg") no-repeat center center;
+}
+.content-three .content>li:nth-child(4){
+    background: green url("../images/4.4.jpg") no-repeat center center;
+}
+.content-three .content>li:nth-child(5){
+    background: green url("../images/4.5.jpg") no-repeat center center;
+    background-size: 500px !important;
+}
+.content-three .content>li:nth-child(6){
+    background: green url("../images/4.6.jpg") no-repeat center center;
+    background-size: 500px !important;
+}
+.content-three .content>li:nth-child(7){
+    background: green url("../images/4.7.jpg") no-repeat center center;
+}
+.content-three .content>li:nth-child(8){
+    background: green url("../images/4.8.jpg") no-repeat center center;
+}
+/* 内容第三部分结束 */
+
+/* 内容第四部分开始 */
+.content-four{
+    width: 100%;
+    height: 650px;
+    background: #f5eff0;
+    overflow: hidden;
+}
+.content-four .base-title{
+    margin: 30px 0;
+}
+.content-four .content{
+    width: 100%;
+    height: 400px;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+.content-four .content>li{
+    width: 23%;
+    height: 100%;
+    background: #fff;
+    padding: 10px;
+    box-sizing: border-box;
+    cursor: pointer;
+}
+.content-four .content>li>div{
+    width: 100%;
+    height: 100%;
+    border: 1px solid #d0b899;
+    box-sizing: border-box;
+    text-align: center;
+}
+.content-four .content>li>div>img{
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+.content-four .content>li>div>p:nth-child(2){
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 60px;
+    margin-bottom: 20px;
+}
+.content-four .content>a{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 64px;
+    font-weight: bold;
+    color: #745050;
+}
+.content-four .content>a:nth-last-child(2){
+    left: -80px;
+}
+.content-four .content>a:last-child{
+    right: -80px;
+}
+/* 内容第四部分结束 */
+
+/* 内容第五部分开始 */
+.content-five{
+    width: 100%;
+    height: 930px;
+    background: url("../images/7.1.png") no-repeat center center;
+    background-size: cover;
+    overflow: hidden;
+}
+.content-five .base-title{
+    margin: 40px 0;
+}
+.content-five .content{
+    width: 100%;
+    height: 680px;
+    position: relative;
+}
+.content-five .content>div:nth-child(1){
+    width: 380px;
+    height: 500px;
+    background: #fff;
+    position: absolute;
+    z-index: 666;
+    top: 0;
+    left: -150px;
+    padding-left: 50px;
+    box-sizing: border-box;
+    transition: left 1s;
+}
+.content-five .content>div:nth-child(2){
+    width: 860px;
+    height: 400px;
+    padding: 30px 30px 30px 100px;
+    box-sizing: border-box;
+    position: absolute;
+    bottom: 20px;
+    right: -150px;
+    border: 1px solid #745050;
+    transition: right 1s;
+}
+.content-five .content>div>h3{
+    font-size: 63px;
+}
+.content-five .content>div>h4{
+    font-size: 22px;
+}
+.content-five .content>div>p{
+    margin: 5px 0;
+}
+.content-five .content>div:nth-child(2)>ul{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.content-five .content>div:nth-child(2)>ul>li{
+    width: 31%;
+    height: 100%;
+    background: url("../images/8.1.jpg") no-repeat center center;
+    background-size: cover;
+    transition: transform 0.5s;
+    cursor: pointer;
+}
+.content-five .content>div:nth-child(2)>ul>li:nth-child(2){
+    background: url("../images/4.5.jpg") no-repeat center center;
+}
+.content-five .content>div:nth-child(2)>ul>li:nth-child(3){
+    background: url("../images/4.6.jpg") no-repeat center center;
+}
+/* 内容第五部分结束 */
+
+/* 内容第六部分开始 */
+.content-six{
+    width: 100%;
+    height: 500px;
+    padding-top: 50px;
+    box-sizing: border-box;
+}
+.content-six .fl{
+    width: 600px;
+    height: 400px;
+    background: #35978f;
+    box-sizing: border-box;
+    padding: 0 80px;
+    color: #fff;
+}
+.content-six .fl>h3{
+    font-size: 32px;
+    margin: 30px 0;
+    text-align: center;
+}
+.content-six .fl>input{
+    width: 350px;
+    height: 30px;
+    margin: 6px 0;
+}
+.content-six .fl>textarea{
+    margin: 6px 0;
+} 
+.content-six .fl>button{
+    font-size: 20px;
+    width: 90px;
+    height: 35px;
+    border: none;
+    border-radius: 8px;
+    margin: 35px 0 0 170px;
+    color: #fff;
+    background: rgba(0, 0, 0, 0.6);
+    transition: background 0.5s;
+    cursor: pointer;
+}
+.content-six .fr{
+    width: 300px;
+    height: 200px;
+    background: #eda744;
+    text-align: center;
+    padding-top: 50px;
+    box-sizing: border-box;
+    color: #fff;
+}
+.content-six .fr>h3{
+    margin-bottom: 20px;
+}
+/* 内容第六部分结束 */
+/* 内容部分结束 */
+
+/* 底部部分开始 */
+/* 关于我们开始 */
+.we{
+    width: 100%;
+    height: 280px;
+    background: #372626;
+    padding-top: 30px;
+    box-sizing: border-box;
+}
+.we>div{
+    display: flex;
+    justify-content: space-between;
+}
+.we>div>dl{
+    color: #fff;
+}
+.we>div>dl>dt{
+    font-size: 20px;
+}
+.we>div>dl>dd{
+    margin: 5px 0;
+}
+/* 关于我们结束 */
+
+/* 友情链接开始 */
+.lianjie{
+    width: 100%;
+    height: 50px;
+    background: #533939;
+    line-height: 50px;
+}
+.lianjie a{
+    color: #fff;
+    font-size: 20px;
+    margin-right: 40px;
+}
+/* 友情链接结束 */
+
+/* 版权部分开始 */
+.copyright{
+    width: 100%;
+    height: 40px;
+    background: #111;
+    color: #fff;
+    line-height: 40px;
+    text-align: center;
+}
+/* 版权部分结束 */
+/* 底部部分结束 */
+
+/* 返回顶部开始 */
+.totop{
+    position: fixed;
+    right: 30px;
+    bottom: 30px;
+}
+/* 返回顶部结束 */

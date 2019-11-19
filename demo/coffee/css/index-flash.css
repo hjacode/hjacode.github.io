@@ -1,0 +1,77 @@
+.header-in>ul>li:hover{
+    color: rgb(9, 170, 157);
+}
+.header-in>ul>li:hover .header-hidden{
+    top: 90px;
+    opacity: 1;
+    pointer-events: auto;
+}
+.header-hidden>li:hover{
+    color: #fff;
+    background: rgba(0, 0, 0, 0.8);
+    padding-left: 30px;
+    opacity: 1;
+    pointer-events: auto;
+}
+@keyframes banner{
+    0%{
+        margin-left: 0%;
+    }
+    15%{
+        margin-left: 0%;
+    }
+    25%{
+        margin-left: -100%;
+    }
+    40%{
+        margin-left: -100%;
+    }
+    50%{
+        margin-left: -200%;
+    }
+    65%{
+        margin-left: -200%;
+    }
+    75%{
+        margin-left: -300%;
+    }
+    85%{
+        margin-left: -300%;
+    }
+    100%{
+        margin-left: 0%;
+    }
+}
+.banner>a:hover{
+    background: rgba(0, 0, 0, 0.8);
+}
+.coffeebeans .content>li>a:hover{
+    background: rgb(21, 104, 97);
+}
+.coffee .content li:hover .text{
+    background: rgba(0, 0, 0, 0.6);
+}
+.coffee .content li:hover .text h3{
+    bottom: -10px;
+}
+.coffee .content li:hover .text p{
+    opacity: 1;
+}
+.content-three .content>li:hover{
+    opacity: 0.6;
+}
+.content-four .content>li:hover div{
+    border: 1px solid #9c7647;
+}
+.content-five .content>div:nth-child(2)>ul>li:hover{
+    transform: scale(1.05);
+}
+.content-five:hover .content>div:nth-child(1){
+    left: 0px;
+}
+.content-five:hover .content>div:nth-child(2){
+    right: 0;
+}
+.content-six .fl>button:hover{
+    background: rgba(0, 0, 0, 0.8);
+}
