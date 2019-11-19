@@ -1,0 +1,96 @@
+.toolbar li:hover i {
+    transform: rotateZ(-180deg);
+    transition: 0.5s;
+}
+.toolbar li:hover a {
+    color: #f60;
+}
+.search>form>input[type="submit"]:hover {
+    background-color: #f80;
+}
+.search>ul>li>a:hover {
+    color: #f60;
+}
+.header-bottom>ul>li a:hover {
+    color: #f60;
+}
+.header-bottom>ul>li:hover span {
+    bottom: 0;
+    transition: 0.5s;
+}
+.banner-left>ul>li:hover {
+    background-color: white;
+}
+.banner-left>ul>li:hover a {
+    color: black;
+}
+.banner-left>ul>li>a:hover {
+    color: #f60;
+}
+.banner-background>p>a:hover {
+    background: rgba(0, 0, 0, 0.6)
+}
+.banner-background>ol>li:hover {
+    background: #f90;
+    transition: 1s;
+}
+.banner-right-midden a:hover {
+    color: #f60;
+}
+.banner-right-bottom>ul>li:hover p {
+    color: #f60;
+}
+.seckill-top>ul>li:hover {
+    background: linear-gradient(45deg, #ff453d, #ff8965);
+    color: white;
+    cursor: pointer;
+}
+.seckill-bottom>ul:hover a {
+    opacity: 1;
+}
+.seckill-bottom>ul>a:hover {
+    background: rgba(0, 0, 0, 0.6);
+}
+.floor-top>ul>li>a:hover {
+    color: #f60;
+}
+.floor-top:hover .floor-top-hidden {
+    display: block;
+}
+.floor-content-left:hover {
+    opacity: 1;
+}
+.floor-content-right img:hover {
+    transform: scale(1.05);
+    transition: 0.5s;
+}
+.floor-content-list>ul>li:hover img {
+    transform: scale(1.05);
+    transition: 0.5s;
+}
+.footer-info dd>a:hover {
+    color: #f60;
+}
+.footer-list dd>a:hover {
+    color: #f70;
+}
+.sidebar .iconfont:hover{
+    background: rgb(255, 170, 1);
+    color: #fff;
+}
+.cart:hover{
+    background: rgb(255, 170, 1);
+    border:none;
+}
+.cart a:hover{
+    color: #fff;
+}
+.modal-content>input:nth-child(-n+6):focus{
+    width: 300px;
+    transition: 0.5s;
+}
+.modal-content>input:last-child:hover{
+    background: #f90;
+    color: white;
+    transition: 0.5s;
+}
