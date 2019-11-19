@@ -1,0 +1,57 @@
+.header-top>ul>li>a:hover{
+    color: #848484;
+}
+.logo>a:hover{
+    color: rgb(65, 95, 255);
+    transition: 0.5s;
+}
+.header-middle>ul>li>a:hover{
+    color: rgb(65, 95, 255);
+    transition: 0.5s;
+}
+.banner-text>p:nth-child(4)>a:hover{
+    color: rgb(65, 95, 255);
+    transition: 0.5s;
+}
+.main-top>div>a>img:hover{
+    transform: scale(1.1,1.1);
+    transition: 0.5s;
+}
+.main-middle-text>p:nth-child(3)>a:hover{
+    color: rgb(65, 95, 255);
+    transition: 0.5s;
+}
+.main-bottom-text>p:nth-child(4)>a:hover{
+    color: rgb(65, 95, 255);
+    transition: 0.5s;
+}
+.banner-small>ul:hover li{
+    width: 22%;
+    transition: width 0.5s;
+}
+.banner-small>ul>li:hover{
+    width: 34%;
+    transition: width 0.5s;
+}
+.footer-in-top>.fl>dl>dd>a:hover{
+    color: #415fff;
+}
+.footer-in-top>.fr>a:nth-child(1):hover{
+    color: #415fff;
+    transition: 0.5s;
+}
+.footer-in-top>.fr>p:nth-child(4)>a:hover{
+    color: #415fff;
+    transition: 0.5s;
+}
+.footer-in-bottom>p>a:hover{
+    color: #415fff;
+    transition: 0.5s;    
+}
+.totop:hover .totop-bth{
+    opacity: 1;
+}
+.totop-bth>a:hover{
+    background-color: #008ddc;
+    transition: 1s;
+}
