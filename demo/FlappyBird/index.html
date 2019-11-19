@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/index.css">
+    <script src="./js/Map.js"></script>
+    <script src="./js/Play.js"></script>
+    <script src="./js/Bird.js"></script>
+    <script src="./js/Pipe.js"></script>
+    <script src="./js/End.js"></script>
+</head>
+
+<body>
+    <!-- 地图部分开始 -->
+    <div id="map">
+        <!-- 开始界面开始 -->
+        <div id="play">
+            <!-- 开始界面标题开始 -->
+            <img src="./images/title.png" alt="" class="play-title-img">
+            <!-- 开始界面标题结束 -->
+            <!-- 开始界面小鸟图片开始 -->
+            <img src="./images/arrow.png" alt="" class="select-bird1 arrow">
+            <img src="./images/bird/bird00.png" alt="" class="play-bird1 select">
+            <img src="./images/arrow.png" alt="" class="select-bird2 arrow">
+            <img src="./images/bird/bird10.png" alt="" class="play-bird2">
+            <!-- 开始界面小鸟图片结束 -->
+            <!-- 开始界面开始按钮开始 -->
+            <img src="./images/button_play.png" alt="" class="playgame">
+            <!-- 开始界面开始按钮结束 -->
+            <!-- 排行榜部分开始 -->
+            <img src="./images/button_score.png" class="rankingbth">
+            <div class="ranking">
+                <p class="ranking-title"><i></i>排行榜TOP10<span>x</span></p>
+                <p class="ranking-centent-title">
+                    <span>排名</span>
+                    <span>名称</span>
+                    <span>分数</span>
+                </p>
+                <ul class="ranking-centent">
+                    <li>
+                        <span>1</span>
+                        <span></span>
+                        <span></span>
+                    </li>
+                    <li>
+                        <span>2</span>
+                        <span></span>
+                        <span></span>
+                    </li>
+                    <li>
+                        <span>3</span>
+                        <span></span>
+                        <span></span>
+                    </li>
+                    <li>
+                        <span>4</span>
+                        <span></span>
+                        <span></span>
+                    </li>
+                    <li>
+                        <span>5</span>
+                        <span></span>
+                        <span></span>
+                    </li>
+                    <li>
+                        <span>6</span>
+                        <span></span>
+                        <span></span>
+                    </li>
+                    <li>
+                        <span>7</span>
+                        <span></span>
+                        <span></span>
+                    </li>
+                    <li>
+                        <span>8</span>
+                        <span></span>
+                        <span></span>
+                    </li>
+                    <li>
+                        <span>9</span>
+                        <span></span>
+                        <span></span>
+                    </li>
+                    <li>
+                        <span>10</span>
+                        <span></span>
+                        <span></span>
+                    </li>
+                </ul>
+            </div>
+            <!-- 排行榜部分结束 -->
+        </div>
+        <!-- 开始界面结束 -->
+        <!-- 分数部分开始 -->
+        <span id="fraction">0</span>
+        <!-- 分数部分结束 -->
+        <!-- 小鸟部分开始 -->
+        <img src="./images/bird/bird01.png" alt="" id="bird">
+        <!-- 小鸟部分结束 -->
+        <!-- 登录用户部分开始 -->
+        <form action="" id="user" method="POST">
+            <p class="user-title" style="font-size: 20px;">GameOver</p>
+            <p class="user-title">请输入名称</p>
+            <input type="text" name="fname">
+            <button>提交</button>
+        </form>
+        <!-- 登录用户部分结束 -->
+        <!-- 地图土地部分开始 -->
+        <div class="map-land"></div>
+        <!-- 地图土地部分结束 -->
+    </div>
+    <!-- 地图部分结束 -->
+    <script>
+        let map = new Map();
+        let play = new Play();
+        let key = 1;
+        let bird = new Bird(key, play);
+        let fractionValue = 0;
+        let pipe = new Pipe(map, fractionValue, bird, key);
+        let end = new End();
+        play.playGame(bird);
+    </script>
+</body>
+
+</html>
