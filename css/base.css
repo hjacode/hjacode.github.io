@@ -178,6 +178,7 @@ html, body {
     box-sizing: border-box;
     opacity: 0;
     pointer-events: none;
+    z-index:999999;
 }
 
 .setting>h3 {
