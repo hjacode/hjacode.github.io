@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="../font/iconfont.css">
+    <link rel="stylesheet" href="../css/base.css">
+    <link rel="stylesheet" href="../css/about.css">
+    <link rel="stylesheet" href="../css/base-phone.css" media="screen and (max-width: 480px)">
+    <link rel="stylesheet" href="../css/about-phone.css" media="screen and (max-width: 480px)">
+</head>
+
+<body>
+    <!-- 顶部背景 -->
+    <div class="top-bg ">
+        <div class="div-in">
+            <h1>BREAD'S BLOG</h1>
+            <p>你觉得好就好</p>
+        </div>
+    </div>
+    <!-- 头部 -->
+    <div class="header">
+        <div class="nav">
+            <div class="nav-bg"></div>
+            <div class="div-in">
+                <p class="logo">BREAD'S BLOG</p>
+                <ul class="menu">
+                    <li><a href="../index.html">首页</a></li>
+                    <li><a href="#">随笔</a></li>
+                    <li><a href="demo.html">作品</a></li>
+                    <li><a href="#">友链</a></li>
+                    <li><a href="about.html">关于我</a></li>
+                </ul>
+                <p class="setting-btn iconfont icon-shezhi fr"></p>
+                <form action="http://www.baidu.com/s" class="search fr" target="_blank">
+                    <input type="hidden" value="s"><input type="text" name="wd" placeholder="百度搜索"><button
+                        class="iconfont icon-search"></button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <!-- 设置界面 -->
+    <div class="setting">
+        <h3>Setting 设置</h3>
+        <span class="setting-exit">×</span>
+    </div>
+    <!-- 移动端头部 -->
+    <div class="phone-header">
+        <div class="phone-nav-btn iconfont icon-menu"></div>
+        <ul class="phone-nav">
+            <li><a href="../index.html">首页</a></li>
+            <li><a href="#">随笔</a></li>
+            <li><a href="demo.html">作品</a></li>
+            <li><a href="#">友链</a></li>
+            <li><a href="about.html">关于我</a></li>
+        </ul>
+        <div class="phone-nav-searchAndSeeting">
+            <p class="setting-btn iconfont icon-shezhi fr"></p>
+            <form action="http://www.baidu.com/s" class="search fl" target="_blank">
+                <input type="hidden" value="s"><input type="text" name="wd" placeholder="百度搜索"><button
+                    class="iconfont icon-search"></button>
+            </form>
+        </div>
+    </div>
+    <!-- 内容 -->
+    <div class="main">
+        <div class="div-in">
+            <a href="#" id="content-btn">点击我查看简历</a>
+            <div class="content">
+                <div class="div-in ">
+                    <div class="content-exit">×</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 版权 -->
+    <div class="copyright">
+        <p>Copyright © 2019 Bread</p>
+    </div>
+    <!-- 返回顶部 -->
+    <div id="totop" class="iconfont icon-uparrowbig"></div>
+    <script src="../js/base.js"></script>
+    <script>
+    $("#content-btn").onclick = () =>{
+        $(".content").style.display = "block";
+    }
+    $(".content-exit").onclick = () =>{
+        $(".content").style.display = "none";
+    }
+    </script>
+</body>
+
+</html>
