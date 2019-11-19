@@ -1,0 +1,177 @@
+/* 顶部导航栏部分动画开始 */
+.top-nav>div>div>a:hover {
+    color: #fff;
+}
+
+.top-nav .top-nav-new>a:hover {
+    color: #fff;
+}
+
+.top-nav .top-nav-new:hover li {
+    height: 155px;
+    opacity: 1;
+}
+
+.top-nav .top-nav-cart:hover a {
+    background: #fff;
+    color: #ff6700;
+}
+
+.top-nav .top-nav-cart:hover li {
+    height: 100px;
+    opacity: 1;
+}
+/* 顶部导航栏部分动画结束 */
+
+/* 头部部分动画开始 */
+/* 头部部分上动画开始 */
+.header-top .logo:hover {
+    background: url(../images/logo.png) no-repeat 0px -52px;
+    background-size: cover;
+}
+
+.header-top .header-nav>a:hover {
+    color: #0070c9;
+}
+
+.header-top .header-nav>li:hover ul {
+    height: 230px;
+    opacity: 1;
+}
+
+.header-top .header-nav>li:hover a {
+    color: #0070c9;
+}
+
+.header-top .header-menu>li>a:hover img {
+    transform: scale(1.1);
+}
+
+.header-top .search:hover input[type=text] {
+    border-color: rgb(176, 176, 176);
+}
+
+.header-top .search:hover button {
+    border: 1px solid rgb(176, 176, 176);
+}
+
+.header-top .search>button:hover {
+    background: #ff6700;
+    border-color: #ff6700;
+    color: #fff;
+}
+
+
+/* 头部部分上动画结束 */
+/* 头部部分中动画开始 */
+.header-middle .list>ul:hover {
+    background: #ff6700;
+}
+
+.header-middle .list>ul:hover .list-menu {
+    display: block;
+}
+
+.header-middle .list-menu>li>a:hover {
+    color: #0070c9;
+}
+
+@keyframes banner {
+    0% {
+        margin-left: 0%;
+    }
+    10% {
+        margin-left: 0%;
+    }
+    20% {
+        margin-left: -100%;
+    }
+    30% {
+        margin-left: -100%;
+    }
+    40% {
+        margin-left: -200%;
+    }
+    50% {
+        margin-left: -200%;
+    }
+    60% {
+        margin-left: -300%;
+    }
+    70% {
+        margin-left: -300%;
+    }
+    80% {
+        margin-left: -400%;
+    }
+    90% {
+        margin-left: -400%;
+    }
+    100% {
+        margin-left: 0%;
+    }
+}
+
+.header-middle .banner>a:hover {
+    background: rgba(0, 0, 0, 0.5)
+}
+
+
+/* 头部部分中动画结束 */
+/* 头部部分下动画开始 */
+.header-bottom .n-code>li:hover a {
+    color: #fff;
+}
+
+.header-bottom .header-promo-list>a:hover {
+    box-shadow: #ccc 0 0 20px;
+}
+/* 头部部分下动画结束 */
+/* 头部部分动画结束 */
+
+
+/* 内容部分动画开始 */
+/* 视频部分动画开始 */
+.video li:hover {
+    margin-top: -3px;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, .1);
+}
+
+.video li:hover a>i {
+    color: #ff6700;
+}
+
+.bottom .service>li:hover i {
+    color: #ff6700;
+}
+
+.bottom .service>li:hover a {
+    color: #ff6700;
+}
+/* 视频部分动画结束 */
+/* 内容部分动画结束 */
+
+
+/* 底部部分开始 */
+/* 加入我们部分开始 */
+.bottom .join-us-left>dl>dd:hover {
+    color: #ff6700;
+}
+
+.bottom .join-us-right>a:hover {
+    color: #fff;
+    background: #ff6700;
+}
+/* 加入我们部分结束 */
+/* 底部部分结束 */
+
+
+/* 固定定位工具开始 */
+.tool>li:hover a>p {
+    color: #ff6700;
+}
+
+.tool>li:hover a>span {
+    color: #ff6700;
+}
+/* 固定定位工具结束 */

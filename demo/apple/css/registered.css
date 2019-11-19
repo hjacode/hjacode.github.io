@@ -1,0 +1,140 @@
+body{
+    background: #f1f1f1;
+}
+
+/* 头部部分开始 */
+.header{
+    width: 100%;
+    height: 70px;
+    margin-top: 50px;
+    text-align: center;
+}
+
+.header .logo{
+    width: 70px;
+    height: 70px;
+    display: inline-block;
+    background: url("../images/login-logo.png");
+    background-size: cover;
+}
+
+.header>span{
+    font-size: 84px;
+}
+/* 头部部分结束 */
+
+/* 内容部分开始 */
+/* 登录界面部分开始 */
+.main{
+    width: 400px;
+    height: 600px;
+    background: #fff;
+    position: absolute;
+    left: 50%;
+    top: 20%;
+    transform: translateX(-50%);
+    border-radius: 8px;
+    box-shadow: 2px 0 46px rgba(0, 0, 0, 0.18);
+    padding: 50px 50px 0 50px;
+    box-sizing: border-box;
+}
+
+.main .title{
+    width: 100%;
+    height: 40px;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 75px;
+    box-sizing: border-box;
+    margin-bottom: 30px;
+}
+
+.main .title>li{
+    text-align: center;
+    font-weight: 700;
+    font-size: 18px;
+    position: relative;
+}
+
+.main .title>li:first-child{
+    width: 55px;
+    height: 100%;
+}
+
+.main .title>li:last-child{
+    width: 55px;
+    height: 100%;
+}
+
+.main .title>li>a{
+    color: #969696;
+}
+
+.main .title>li>span{
+    color: #969696;
+}
+
+.main .title>li>i{
+    width: 0;
+    height: 3px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    background: #0070c9;
+    transition: width 0.35s;
+}
+
+.main input{
+    width: 100%;
+    height: 45px;
+    border-radius: 6px;
+    margin: 10px 0;
+    border: none;
+    border: 2px solid #d6d6d6;
+    font-size: 16px;
+    text-indent: 0.5em;
+}
+
+.main>form>input:focus{
+    border: 2px solid #0070c9;
+}
+
+.main input[type=submit]{
+    border: none;
+    cursor: pointer;
+    background: #0070c9;
+    color: #fff;
+}
+
+.main .text{
+    font-size: 14px;
+    color: rgb(51, 51, 51);
+    margin-bottom: 5px;
+}
+
+.main .login{
+    margin-top: 30px;
+}
+
+.main .login>a{
+    color: #0070c9;
+    font-weight: bold;
+    margin-left: 10px;
+}
+
+.main .login>span{
+    color: rgb(51, 51, 51);
+}
+
+/* 登录界面部分结束 */
+/* 内容部分结束 */
+
+/* 当前登录注册选中样式开始 */
+.main .title .current>a{
+    color: #0070c9;
+}
+
+.main .title .current>i{
+    width: 100%;
+}
+/* 当前登录注册选中样式结束 */

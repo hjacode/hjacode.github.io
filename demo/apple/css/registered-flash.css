@@ -1,0 +1,11 @@
+/* 内容动画部分开始 */
+/* 登录界面动画部分开始 */
+.main .title>li:hover i{
+    width: 100%;
+}
+
+.main input[type=submit]:hover{
+    background: #028dff;
+}
+/* 登录界面动画部分结束 */
+/* 内容动画部分结束 */

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Apple-Login</title>
+    <link rel="icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../css/base.css">
+    <link rel="stylesheet" href="../css/login-flash.css">
+    <link rel="stylesheet" href="../css/login.css">
+</head>
+
+<body>
+    <!-- 头部部分开始 -->
+    <div class="header">
+        <a href="#" class="logo"></a>
+        <span>Apple</span>
+    </div>
+    <!-- 头部部分结束 -->
+    <!-- 内容部分开始 -->
+    <!-- 登录界面部分开始 -->
+    <div class="main">
+        <ul class="title">
+            <li class="current">
+                <a href="#">登录</a>
+                <i></i>
+            </li>
+            <li><span>·</span></li>
+            <li>
+                <a href="registered.html">注册</a>
+                <i></i>
+            </li>
+        </ul>
+        <form action="" method="POST" id="action">
+            <input type="text" placeholder="Apple ID (仅限数字)" name="fname" onkeyup="this.value=this.value.replace(/\D/g,'')"
+                maxlength="10" id="name">
+            <!-- 注册用户名部分 -->
+            <input type="password" placeholder="密码" name="fpassword" onkeyup="value=value.replace(/[\W]/g,'')"
+                maxlength="15" id="password">
+            <!-- 注册密码部分 -->
+            <input name="submit" type="submit" value="login">
+            <!-- 注册按钮部分 -->
+        </form>
+        <p class="text"><a href="#">登录遇到问题?</a></p>
+
+        <p class="text">您的Apple ID是您用于登录iTunes，App Store和iCloud的电子邮件地址。</p>
+        <p class="registered">
+            <a href="registered.html" class="fr">注册</a>
+            <span class="fr">没有账户?</span>
+        </p>
+    </div>
+    <!-- 登录界面部分结束 -->
+    <!-- 内容部分结束 -->
+    <script>
+        let btn = document.querySelector('#action');
+        btn.onsubmit = (ev) => {
+            let name = document.getElementById('name').value;
+            let password = document.getElementById('password').value;
+
+            if (name == "") {
+                ev.preventDefault();
+                document.getElementById('name').style.border = "2px solid 	#de071c";
+            } else {
+                document.getElementById('name').style.border = "2px solid 	#0070c9";
+            }
+            if (password == "") {
+                ev.preventDefault();
+                document.getElementById('password').style.border = "2px solid 	#de071c";
+            } else {
+                document.getElementById('password').style.border = "2px solid 	#0070c9";
+            }
+            if (name == "" && password == "") { }
+            else {
+                document.getElementById('action').action = "../php/login.php";
+            }
+        }
+    </script>
+</body>
+
+</html>

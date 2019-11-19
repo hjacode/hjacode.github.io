@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Apple-Registerd</title>
+    <link rel="icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../css/base.css">
+    <link rel="stylesheet" href="../css/registered-flash.css">
+    <link rel="stylesheet" href="../css/registered.css">
+</head>
+
+<body>
+    <!-- 头部部分开始 -->
+    <div class="header">
+        <a href="#" class="logo"></a>
+        <span>Apple</span>
+    </div>
+    <!-- 头部部分结束 -->
+    <!-- 内容部分开始 -->
+    <!-- 注册界面部分开始 -->
+    <div class="main">
+        <ul class="title">
+            <li>
+                <a href="login.html">登录</a>
+                <i></i>
+            </li>
+            <li><span>·</span></li>
+            <li class="current">
+                <a href="#">注册</a>
+                <i></i>
+            </li>
+        </ul>
+        <form action="" method="POST" id="action">
+            <input type="text" placeholder="Apple ID (仅限数字)" name="fname"
+                onkeyup="this.value=this.value.replace(/\D/g,'')" maxlength="10" id="name">
+            <!-- 注册用户名部分 -->
+            <input type="password" placeholder="注册密码 (仅限数字字母)" name="fpassword" onkeyup="value=value.replace(/[\W]/g,'')"
+                maxlength="15" id="password">
+            <!-- 注册密码部分 -->
+            <input type="tel" placeholder="手机号 (仅限数字字母)" name="telephone" onkeyup="this.value=this.value.replace(/\D/g,'')"
+                maxlength="11" id="tel">
+            <!-- 注册手机号部分 -->
+            <input type="email" placeholder="邮箱" name="email" maxlength="30" id="email">
+            <!-- 注册邮箱部分 -->
+            <input name="submit" type="submit" value="注册">
+            <!-- 注册按钮部分 -->
+        </form>
+        <p class="text">您的Apple ID是您用于登录iTunes，App Store和iCloud的电子邮件地址。</p>
+        <p class="login">
+            <a href="login.html" class="fr">登录</a>
+            <span class="fr">已有账户?</span>
+        </p>
+    </div>
+    <!-- 注册界面部分结束 -->
+    <!-- 内容部分结束 -->
+
+    <script>
+        let btn = document.querySelector('#action');
+        btn.onsubmit = (ev) => {
+            let name = document.getElementById('name').value;
+            let password = document.getElementById('password').value;
+            let tel = document.getElementById('tel').value;
+            let email = document.getElementById('email').value;
+
+            if (name == "") {
+                ev.preventDefault();
+                document.getElementById('name').style.border = "2px solid 	#de071c";
+            } else {
+                document.getElementById('name').style.border = "2px solid 	#0070c9";
+            }
+            if (password == "") {
+                ev.preventDefault();
+                document.getElementById('password').style.border = "2px solid 	#de071c";
+            } else {
+                document.getElementById('password').style.border = "2px solid 	#0070c9";
+            }
+            if (tel == "") {
+                ev.preventDefault();
+                document.getElementById('tel').style.border = "2px solid 	#de071c";
+            } else {
+                document.getElementById('tel').style.border = "2px solid 	#0070c9";
+            }
+            if (email == "") {
+                ev.preventDefault();
+                document.getElementById('email').style.border = "2px solid 	#de071c";
+            } else {
+                document.getElementById('email').style.border = "2px solid 	#0070c9";
+            }
+            if (name == "" && password == "" && tel == "" && email == "") { }
+            else {
+                document.getElementById('action').action = "../php/registered.php";
+            }
+        }
+    </script>
+</body>
+
+</html>
