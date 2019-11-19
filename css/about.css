@@ -1,0 +1,45 @@
+.copyright{
+    position: absolute;
+}
+
+#content-btn{
+    text-decoration: dashed;
+}
+
+.main .content{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    left: 0;
+    top: 0;
+    display: none;
+    background: rgba(0, 0, 0, .6) url("./../images/about.png") no-repeat center center;
+    background-size: contain;
+    z-index: 9999;
+    animation: content 1s ease-in-out forwards;
+}
+
+@keyframes content{
+    0%{
+        opacity: 0;
+    }
+
+    100%{
+        opacity: 1;
+    }
+}
+
+.content-exit{
+    width: 50px;
+    height: 50px;
+    background: #fff;
+    border-radius: 50%;
+    box-shadow: #aaa 0 0 5px;
+    font-size: 28px;
+    text-align: center;
+    line-height: 50px;
+    cursor: pointer;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+}

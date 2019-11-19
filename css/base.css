@@ -1,0 +1,275 @@
+* {
+    margin: 0;
+    padding: 0;
+    outline: none;
+    list-style: none;
+    text-decoration: none;
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+    font-family: "微软雅黑";
+    background: #f2f2f2;
+}
+
+.fl {
+    float: left;
+}
+
+.fr {
+    float: right;
+}
+
+.div-in {
+    width: 980px;
+    height: 100%;
+    margin: 0 auto;
+    position: relative;
+}
+
+/* 顶部背景开始 */
+
+.top-bg {
+    width: 100%;
+    height: 165px;
+    background: url("./../images/top-bg.jpg") no-repeat center center;
+    background-size: cover;
+    color: #fff;
+    padding-top: 50px;
+    box-sizing: border-box;
+    overflow: hidden;
+    animation: topBg ease-in-out 1s;
+}
+
+@keyframes topBg {
+    0% {
+        padding-top: 165px;
+    }
+    100% {
+        padding-top: 50px;
+    }
+}
+
+.top-bg>div>h1 {
+    transition: color .25s;
+}
+
+.top-bg>div>h1:hover {
+    color: #ddd;
+}
+
+.top-bg>div>p {
+    font-size: 18px;
+    font-weight: 200;
+}
+
+/* 顶部背景结束 */
+
+/* 头部部分开始 */
+
+.header .logo {
+    float: left;
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 70px;
+    margin-right: 100px;
+    transition: color .25s;
+}
+
+.header .nav {
+    width: 100%;
+    height: 70px;
+    background: #fff;
+    border-bottom: 1px #ddd solid;
+    overflow: hidden;
+}
+
+.nav .nav-bg {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.7);
+    backdrop-filter: saturate(180%) blur(20px);
+    position: absolute;
+    display: none;
+}
+
+.nav .nav-bg::after {
+    width: 100%;
+    height: 100%;
+    content: "";
+    display: block;
+    position: absolute;
+}
+
+.header .menu {
+    float: left;
+    height: 100%;
+}
+
+.header .menu>li {
+    float: left;
+    height: 100%;
+    margin-right: 50px;
+    cursor: pointer;
+    line-height: 70px;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.header .menu>li>a{
+    color: #333;
+    transition: color .25s;
+}
+
+.header .menu>li:hover >a, .header .logo:hover >a {
+    color: #666;
+}
+
+.search {
+    height: 100%;
+    padding-top: 17.5px;
+    box-sizing: border-box;
+}
+
+.search:hover input, .search:hover button {
+    border-color: #999;
+}
+
+.search>input, button {
+    float: left;
+    height: 35px;
+    background: #fff;
+    box-sizing: border-box;
+    border: 1px solid #e0e0e0;
+    transition: border-color .25s;
+}
+
+.search>input {
+    text-indent: .5em
+}
+
+.search>button {
+    font-size: 18px;
+    font-weight: bold;
+    width: 35px;
+    border-left-style: none;
+    cursor: pointer;
+}
+
+.setting-btn {
+    margin-left: 50px;
+    line-height: 70px;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.setting {
+    width: 300px;
+    height: 230px;
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 8px;
+    box-shadow: #aaa 0 0 5px;
+    background: #fff;
+    padding: 10px;
+    box-sizing: border-box;
+    opacity: 0;
+    pointer-events: none;
+}
+
+.setting>h3 {
+    text-align: center;
+}
+
+.setting-exit {
+    font-size: 20px;
+    font-weight: bold;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    cursor: pointer;
+}
+
+@keyframes settingOn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+        pointer-events: auto;
+    }
+}
+
+@keyframes settingEnd {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+        pointer-events: none;
+    }
+}
+
+.phone-header {
+    display: none;
+}
+
+/* 头部部分结束 */
+
+/* 内容部分开始 */
+
+.main {
+    width: 100%;
+    background: #f2f2f2;
+}
+
+/* 内容部分结束 */
+
+/* 版权部分开始 */
+
+.copyright {
+    width: 100%;
+    height: 70px;
+    line-height: 70px;
+    background: #fff;
+    text-align: center;
+    border-top: 1px #ddd solid;
+    left: 0;
+    bottom: 0;
+}
+
+/* 版权部分结束 */
+
+/* 返回顶部开始 */
+
+#totop {
+    display: none;
+    width: 50px;
+    height: 50px;
+    font-size: 22px;
+    text-align: center;
+    line-height: 50px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: #aaa 0 0 5px;
+    position: fixed;
+    right: 40px;
+    bottom: 60px;
+    cursor: pointer;
+    animation: totop .5s ease-in-out forwards;
+}
+
+@keyframes totop{
+    0%{
+        opacity: 0;
+    }
+
+    100%{
+        opacity: 1;
+    }
+}
+
+/* 返回顶部结束 */

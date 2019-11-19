@@ -1,0 +1,47 @@
+.copyright{
+    position: absolute;
+}
+
+.main .demos {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-content: center;
+}
+
+.main .demo {
+    margin: 20px 0;
+    display: block;
+    width: 220px;
+    height: 220px;
+    border-radius: 8px;
+    box-shadow: #aaa 0 0 5px;
+    background: #fff;
+    overflow: hidden;
+    text-align: center;
+    transition: box-shadow 0.35s;
+    position: relative;
+}
+
+.main .demo:hover {
+    box-shadow: 0 15px 30px rgba(0, 0, 0, .1);
+}
+
+.main .demo>img {
+    width: 100%;
+    height: 75%;
+    object-fit: cover;
+}
+
+.main .demo>h4{
+    line-height: 40px;
+}
+
+.main .demo>a{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+}

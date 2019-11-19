@@ -1,0 +1,114 @@
+/* 顶部背景开始 */
+.top-bg{
+    text-align: center;
+}
+/* 顶部背景结束 */
+
+/* 头部部分开始 */
+.header{
+    display: none;
+}
+
+.phone-header{
+    display: block;
+    width: 100%;
+}
+
+.phone-nav-btn{
+    width: 100%;
+    height: 50px;
+    background: #fff;
+    border-bottom: 1px #ddd solid;
+    font-size: 22px;
+    font-weight: bold;
+    text-align: center;
+    line-height: 50px;
+    cursor: pointer;
+    box-sizing: border-box;
+}
+
+.phone-nav{
+    width: 100%;
+    height: 0;
+    background: #fff;
+    padding: 0 30px;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+@keyframes phoneNavOn{
+    0%{
+        height: 0;
+    }
+
+    100%{
+        height: 226px;
+        border-bottom: 1px #ddd solid;
+    }
+}
+
+@keyframes phoneNavEnd {
+    0%{
+        height: 226px;
+    }
+
+    100%{
+        height: 0;
+    }
+}
+
+.phone-nav>li{
+    width: 100%;
+    height: 45px;
+    line-height: 45px;
+    cursor: pointer;
+    font-weight: bold;
+    background: #fff;
+    box-sizing: border-box;
+    border-bottom: 1px #ddd solid;
+}
+
+.phone-nav>li>a{
+    color: #000;
+}
+
+.phone-nav>li:last-of-type{
+    border: none;
+}
+
+.phone-nav-searchAndSeeting{
+    width: 100%;
+    height: 41px;
+    padding: 0 30px;
+    box-sizing: border-box;
+    background: #fff;
+}
+
+.search{
+    padding-top: 3px;
+}
+
+.setting-btn{
+    margin: 0;
+    line-height: 41px;
+}
+
+.div-in{
+    width: 100%;
+}
+
+/* 头部部分结束 */
+
+.main{
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+/* 返回顶部开始 */
+
+#totop {
+    right: 20px;
+    bottom: 20px;
+}
+
+/* 返回顶部结束 */
