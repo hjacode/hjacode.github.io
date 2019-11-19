@@ -1,0 +1,100 @@
+.menu>ul>li>a:hover{
+    color: #aaaaaa;
+}
+.login:hover{
+    background-color: rgb(243, 93, 73)
+}
+.header:hover .nav{
+    opacity: 1;
+    bottom: -240px;
+}
+.header-base_box>ul>li>a:hover{
+    color: #aaaaaa;
+}
+.banner-left>ul>li:hover{
+    color: #e8340e;
+    background-color: white;
+}
+.banner-left:hover .banner-right{
+    display: block;
+    z-index: 999;
+}
+.banner-right>ul>li>a:hover{
+    color: #e8340e
+}
+#arr_left:hover{
+    background-color: black;
+}
+#arr_right:hover{
+    background-color: black;
+}
+.newrelease-channel>div:hover{
+    background-color: #f35c49;
+    color: white;
+}
+.base:hover .base-top{
+    margin-top: -30px;
+}
+.base:hover .hidden{
+    opacity: 0;
+}
+.base:hover .base-bottom>input{
+    opacity: 1;
+}
+.base-bottom>input:nth-child(2):hover{
+    background-color: #cb3234;
+}
+.fitting-top>.base>.base-bottom>input:hover{
+    background-color: #cb3234;
+}
+.fitting-bottom>.base>.base-bottom>input:hover{
+    background-color: #cb3234;
+}
+.comment-centent>div:hover{
+    transform: scale(1.05,1.05)
+}
+.mp4-centent>div:hover{
+    transform: scale(1.05,1.05)
+}
+.mp4-centent>div:hover .play{
+    background-color: #a02525;
+}
+.service-bottom>div:hover div{
+    transform: rotateZ(360deg)
+}
+.service-bottom>div:hover p{
+    color: #e8340e;
+}
+.join-us dd:hover{
+    color: #e8340e;
+}
+.copyright-pic>div:nth-child(1):hover{
+    background-color: rgba(231, 31, 25, 0.8);
+}
+.copyright-pic>div:nth-child(2):hover{
+    background-color: rgba(56, 186, 53, 0.8);
+}
+.copyright-pic>div:nth-child(2):hover div{
+    display: block;
+}
+.fixed>a>img:hover{
+    background-color: rgba(231, 31, 25, 0.8);
+}
+.fixed>a:hover div{
+    display: block;
+}
+.backtotop:hover .backtotop-bth{
+    opacity: 1;
+}
+.backtotop-bth>a>img:hover{
+    background-color: rgba(231, 31, 25, 0.8);
+}
+.modal_centent>input[type="text"]:focus{
+    width: 320px;
+}
+.modal_centent>input[type="password"]:focus{
+    width: 320px;
+}
+.modal_centent>input[type="button"]:hover{
+    background-color: #ababab;
+}
