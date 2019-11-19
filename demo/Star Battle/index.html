@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Star Battle</title>
+    <link rel="stylesheet" href="./css/base.css">
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="./css/animation.css">
+    <script src="./js/base.js"></script>
+    <script src="./js/start.js"></script>
+    <script src="./js/game.js"></script>
+</head>
+
+<body>
+    <div id="map">
+        <!-- 声音 -->
+        <div id="audio-btn">
+            <i></i>
+            <!-- 背景音乐 -->
+            <audio src="./mp3/background.mp3" autoplay loop id="bg-music"></audio>
+        </div>
+        <!-- 开始界面内容 -->
+        <div id="start">
+            <img src="./images/logo-text.png" alt="" class="start-logo-text">
+            <div class="start-menu">
+                <button id="start-btn" class="water-btn">Start</button>
+                <button id="help-btn" class="water-btn">Help</button>
+                <button id="ranking-btn" class="water-btn">Ranking</button>
+                <img src="./images/logo.png" alt="" class="start-menu-logo">
+                <img src="./images/start-menu-ship.png" alt="" class="start-menu-ship">
+            </div>
+            <div id="start-mainShip">
+                <div class="mainShip-in"></div>
+                <img src="./images/my1.png" alt="" class="mainShip-img">
+            </div>
+            <p class="start-mainShip-select">
+                <span class="fl">&lt;</span>
+                <span class="fr">&gt;</span>
+            </p>
+            <!-- diy飞船颜色开始 -->
+            <button class="diy-btn water-btn">DIY</button>
+            <div id="diy">
+                <h3>DIY</h3>
+                <span class="diy-end fr">x</span>
+                <input type="text" id="diy-color" placeholder="颜色进制码,不要#">
+                <button class="water-btn" id="diy-yes">YES</button>
+                <button class="water-btn" id="diy-vip">VIP</button>
+            </div>
+            <!-- diy飞船颜色结束 -->
+            <!-- 右边隐藏帮助列表 -->
+            <div class="rightBox rightBox-help">
+                <h3>说明</h3>
+                <h4>1，控制方法</h4>
+                <p>键盘的WSAD控制。空格攻击</p>
+                <h4>2，分数系统</h4>
+                <p>被敌人的宇宙飞船击中，燃油计数器应减少 15 点。</p>
+                <p>摧毁的每个敌方宇宙飞船都增加5分。如果摧毁了友好的宇宙飞船，分数将减少 10 分。</p>
+                <p>小行星必须用两枪摧毁。摧毁每颗小行星，分数增加10分。</p>
+                <h4>3，游戏规则</h4>
+                <p>主飞船需要通过飞入来收集燃料图标。一个燃油计数器增加 15 点。一点提供 1 秒的飞行时间。</p>
+                <p>如果燃油计数器达到零，游戏结束。</p>
+            </div>
+            <div class="rightBox rightBox-ranking">
+                <h3>排行榜</h3>
+            </div>
+        </div>
+        <!-- 开始游戏时候的白屏 -->
+        <div class="" id="start-white"></div>
+        <div id="game">
+            <!-- 主飞船 -->
+            <div id="game-mainShip">
+                <div class="mainShip-in"></div>
+                <img src="./images/my1.png" alt="" class="mainShip-img">
+            </div>
+            <!-- 飞船状态 -->
+            <div class="shipStatus">
+                <div class="shipStatus-top">
+                    <img src="./images/fuel.png" alt="">
+                    <div id="fuelValue">
+                        <div id="fuelValue-in"></div>
+                        <span id="fuelValue-text">15</span>
+                    </div>
+                </div>
+                <p id="fraction">fraction : <span>0</span></p>
+            </div>
+            <!-- 时间 -->
+            <div class="time">
+                <img src="./images/time.png" alt="">
+                <span id="time-value">0s</span>
+            </div>
+            <!-- 调节字体 -->
+            <div id="fontSize">
+                <p>A</p>
+                <p id="fontSizeAdd">+</p>
+                <p id="fontSizeLess">-</p>
+            </div>
+            <!-- 暂停开始 -->
+            <div id="pause"></div>
+            <!-- 死亡后弹窗 -->
+
+        </div>
+    </div>
+    <script>
+        let base = new Base();
+        let start = new Start();
+    </script>
+</body>
+
+</html>

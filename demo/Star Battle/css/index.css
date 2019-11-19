@@ -1,0 +1,370 @@
+#map {
+    width: 960px;
+    height: 600px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    margin: auto;
+    background: url("./../images/map.png");
+    background-position: 0%;
+    background-size: cover;;
+    overflow: hidden;
+}
+
+/* 声音部分开始 */
+
+#audio-btn {
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    z-index: 999;
+    right: 15px;
+    top: 15px;
+    background: url("./../images/volume-on.png");
+    background-size: cover;
+    cursor: pointer;
+    animation: .35s ease-in-out 0s 1 forwards;
+    animation-name: audioOff;
+}
+
+#audio-btn>i {
+    width: 6px;
+    border-radius: 8px;
+    transform-origin: left top;
+    transform: rotate(-35deg);
+    display: block;
+    background: #fff;
+    animation: .35s ease-in-out 0s 1 forwards;
+    animation-name: audioLineOff;
+
+}
+
+/* 声音部分结束 */
+
+/* 开始界面内容开始 */
+
+#start .start-logo-text {
+    position: absolute;
+    left: 30%;
+    top: 3%;
+}
+
+.start-menu {
+    width: 360px;
+    height: 250px;
+    background: url("./../images/start-menu-bg.png");
+    position: absolute;
+    left: 120px;
+    animation: startMenu 1s ease-in-out 0s 1 forwards;
+}
+
+.start-menu .start-menu-logo {
+    width: 150px;
+    position: absolute;
+    left: 50%;
+    top: -50px;
+    transform: translateX(-50%);
+}
+
+.start-menu>button {
+    opacity: 0;
+}
+
+.start-menu .start-menu-ship {
+    position: absolute;
+    right: -40px;
+    bottom: -35px;
+}
+
+.start-menu>button:first-child {
+    background: #fc4653;
+    animation: startMenuButton .4s ease-in-out 0s 1 forwards;
+}
+
+.start-menu>button:nth-child(2) {
+    top: 120px;
+    animation: startMenuButton .4s ease-in-out .25s 1 forwards;
+}
+
+.start-menu>button:last-of-type {
+    top: 170px;
+    animation: startMenuButton .4s ease-in-out .5s 1 forwards;
+}
+
+/* 按钮水纹效果开始 */
+
+.water-btn {
+    width: 180px;
+    height: 35px;
+    font-size: 18px;
+    border-radius: 8px;
+    border: none;
+    background: #0989e3;
+    cursor: pointer;
+    position: absolute;
+    top: 70px;
+    transform: translateX(-50%);
+    overflow: hidden;
+    transition: background .35s;
+    color: #fff;
+}
+
+.water-btn:after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    pointer-events: none;
+    background: radial-gradient(circle, #fff 10%, transparent 10.01%) no-repeat 50%;
+    transform: scale(10, 10);
+    opacity: 0;
+    transition: transform .7s, opacity .7s;
+}
+
+.water-btn:active:after {
+    transform: scale(0, 0);
+    opacity: .3;
+    transition: 0s;
+}
+
+/* 按钮水纹效果结束 */
+
+#start-mainShip {
+    width: 105px;
+    height: 70px;
+    position: absolute;
+    right: 195px;
+    top: 48%;
+    transform: translateY(-50%);
+    animation: start-mianShip .35s ease-in-out 0s infinite alternate;
+}
+
+.start-mainShip-select {
+    width: 105px;
+    height: 70px;
+    position: absolute;
+    right: 195px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.start-mainShip-select>span {
+    font-size: 30px;
+    font-weight: bold;
+    color: #ccc;
+    line-height: 70px;
+    margin-left: -60px;
+    cursor: pointer;
+}
+
+.start-mainShip-select>span:hover{
+    color: #fff;
+}
+
+.start-mainShip-select>span:last-child {
+    margin-left: 0px;
+    margin-right: -60px;
+}
+
+/* diy飞船开始 */
+
+.diy-btn {
+    width: 80px;
+    background: #fc4653;
+    position: absolute;
+    right: 165px;
+    top: 65%;
+}
+
+#diy {
+    width: 120px;
+    height: 160px;
+    background: #fff;
+    position: absolute;
+    z-index: 999;
+    border-radius: 8px;
+    right: -150px;
+    top: 50%;
+    transform: translate(0, -50%);
+    text-align: center;
+    padding: 5px 5px;
+    box-sizing: border-box;
+}
+
+.diy-end {
+    position: absolute;
+    top: 0;
+    right: 10px;
+    cursor: pointer;
+}
+
+#diy-color{
+    margin-top: 10px;
+    width: 100%;
+    height: 30px;
+    box-sizing: border-box;
+    text-align: center;
+    border: 2px solid #aaa;
+}
+
+#diy>button{
+    width: 100%;
+    height: 30px;
+    margin-top: 10px;
+    position: static;
+    transform: translateX(0%);
+    border-radius: 6px;
+    font-size: 14px;
+    background: #fc4653;
+}
+
+#diy>button:last-child{
+    background: #fdc915;
+}
+
+/* diy飞船结束 */
+
+#start-white {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    display: none;
+    background: #fff;
+    animation: startWhite 2s ease-in-out 0s 1 forwards;
+}
+
+/* 开始界面内容结束 */
+
+/* 游戏界面开始 */
+#game {
+    display: none;
+    color: #fff;
+}
+
+#game-mainShip {
+    width: 80px;
+    height: 53.3px;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    transition: .3s;
+}
+
+#game .shipStatus{
+    width: 230px;
+    height: 100px;
+    background: rgba(255, 255, 255, 0.6);
+    position: absolute;
+    z-index: 999;
+    left: 15px;
+    top: 15px;
+    border-radius: 8px;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+#game .shipStatus-top{
+    width: 100%;
+    height: 50px;
+
+}
+
+#game .shipStatus-top>img{
+    height: 100%;
+    float: left;
+}
+
+#fuelValue{
+    width: 150px;
+    height: 27px;
+    margin-top: 23px;
+    background: #fc4653;
+    border-radius: 8px;
+    float: right;
+    position: relative;
+    overflow: hidden;
+    border: 2px solid #fff;
+    box-sizing: border-box;;
+}
+
+#fuelValue-text{
+    font-weight: bold;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+}
+
+#fuelValue-in{
+    width: 50%;
+    height: 100%;
+    background: #0989e3;
+    transition: 0.3s ease-in-out;
+
+}
+
+#fraction{
+    margin-top: 10px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+#game .time{
+    width: 40px;
+    position: absolute;
+    z-index: 999;
+    right: 15px;
+    top: 75px;
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+#game .time>img{
+    width: 100%;
+}
+
+#fontSize{
+    width: 40px;
+    height: 82px;
+    padding: 30px 0 5px 0;
+    box-sizing: border-box;
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.6);
+    position: absolute;
+    z-index: 999;
+    right: 15px;
+    top: 165px;
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+#fontSize>p:first-child{
+    position: absolute;
+    left: 50%;
+    top: 5px;
+    transform: translate(-50%,0);
+}
+
+#fontSize>p:nth-last-of-type(-n +2):hover{
+    cursor: pointer;
+    transform: scale(1.2);
+}
+
+#pause{
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    z-index: 999;
+    right: 15px;
+    top: 267px;
+    background: url("./../images/pause.png");
+    background-size: cover !important;
+    cursor: pointer;
+}
+/* 游戏界面结束 */

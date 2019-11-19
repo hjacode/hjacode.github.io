@@ -1,0 +1,39 @@
+.header>ul>li:hover span{
+    opacity: 1;
+}
+.plays-left{
+    animation: plays-one 1s ease 0.25s forwards;
+}
+@keyframes plays-one{
+    from{
+        margin-top: 0px;
+    }
+    to{
+        margin-top: -160px;
+    }
+}
+.plays-mid{
+    animation: plays-mid 1s ease 0.5s forwards;
+}
+@keyframes plays-mid{
+    from{
+        margin-top: 0px;
+    }
+    to{
+        margin-top: -160px;
+    }
+}
+.plays-right{
+    animation: plays-right 1s ease 0.75s forwards;
+}
+@keyframes plays-right{
+    from{
+        margin-top: 0px;
+    }
+    to{
+        margin-top: -160px;
+    }
+}
+.footer-in-mid>.fr>p>a:hover{
+    color: white;
+}

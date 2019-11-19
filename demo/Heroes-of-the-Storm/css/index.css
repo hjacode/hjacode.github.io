@@ -1,0 +1,245 @@
+/* 背景视频部分开始 */
+video{
+    width: 100%;
+    height: 1080px;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    z-index: -2;
+}
+/* 背景视频部分结束 */
+
+/* 头部部分开始 */
+.header{
+    width: 1200px;
+    height: 150px;
+    margin: 0 auto;
+}
+.header>ul>li{
+    width: 200px;
+    height: 60px;
+    background: linear-gradient(to bottom,#300064,#000064);
+    position: relative;
+    float: left;
+    margin-top: 45px;
+}
+.header>ul>li:nth-child(2){
+    margin-right: 400px;
+}
+.header>ul>li>a{
+    display: block;
+    width: 100%;
+    height: 100%;
+    background: url("../images/bth.png");
+    text-align: center;
+    line-height: 60px;
+    font-size: 18px;
+}
+.header>ul>li:nth-child(4)>a{
+    background: url("../images/bth2.png");
+}
+.header>ul>li>span{
+    width: 100%;
+    height: 2px;
+    background-color: #fff;
+    position: absolute;
+    bottom: 0;
+    opacity: 0;
+    transition: 0.5s;
+}
+.header>ul>li>i{
+    width: 1px;
+    height: 50px;
+    position: absolute;
+    display: block;
+    right: 0;
+    top: 2px;
+    background: #494794 linear-gradient(#24204d,#494794,#1b1638)
+}
+.logo{
+    position: absolute;
+    left: 50%;
+    top: -55px;
+    transform: translateX(-50%);
+}
+.logo>a>img{
+    width: 393px;
+    height: 239px;
+}
+/* 头部部分结束 */
+
+/* 内容部分开始 */
+.main{
+    width: 100%;
+    height: 930px;
+    position: relative;
+}
+
+/* 新游戏部分开始 */
+.heroes-name{
+    height: 190px;
+    width: 1370px;
+    margin: 0 auto;
+}
+/* 新游戏部分结束 */
+
+/* 口号部分开始 */
+.slogn{
+    width: 1158px;
+    height: 344px;
+    margin: -50px auto;
+    background: url("../images/slogan.png") no-repeat;
+}
+/* 口号部分结束 */
+
+/* 玩法部分开始 */
+.plays{
+    width: 1000px;
+    height: 206px;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    justify-content: space-between;
+}
+.plays>div{
+    width: 304px;
+    height: 206px;
+    background: #15112d;
+}
+.plays>div>div:nth-child(1){
+    width: 304px;
+    height: 52px;
+    border-width: 2px 2px 0 2px;
+    border-color: #2a2658;
+    border-style: solid;
+    box-sizing: border-box;
+    float: left;
+    text-align: center;
+    line-height: 52px;
+    font-size: 20px;
+    font-weight: 700;
+}
+.plays>div>div:nth-child(2){
+    width: 304px;
+    height: 154px;
+    border: 2px solid #655fc7;
+    box-sizing: border-box;
+    float: left;
+    overflow: hidden;
+}
+.plays img{
+    height: 100%;
+}
+/* 玩法部分结束 */
+/* 内容部分结束 */
+
+/* 底部部分开始 */
+.footer{
+    height: 502px;
+    width: 100%;
+    border-top:2px solid #630d8f;
+    background-color: #0d0017;
+}
+.footer-in{
+    width: 1000px;
+    height: 430px;
+    margin: 0 auto;
+    box-sizing: border-box;
+    padding-top: 128px;
+}
+
+/* 底部部分-上开始 */
+.footer-in-top{
+    font-size: 14px;
+    height: 18px;
+}
+.footer-in-top>p>a{
+    margin-right: 40px;
+}
+.footer-in-top>p>a>i{
+    width: 18px;
+    height: 18px;
+    background-color: #630d8f;
+    display: inline-block;
+    vertical-align: bottom;
+
+    background: url("../images/jlt.png") -6px -7px;
+}
+.footer-in-top>p>a:nth-child(2)>i{
+    background: url("../images/jlt.png") -36px -8px;
+}
+.footer-in-top>p>a:nth-child(3)>i{
+    background: url("../images/jlt.png") -6px -101px;
+}
+.footer-in-top>p:nth-child(2)>i{
+    display: inline-block;
+    font-style: normal;
+    text-align: center;
+    line-height: 14px;
+    vertical-align: bottom;
+}
+.footer-in-top>p:nth-child(2)>i:nth-child(2){
+    width: 95px;
+    height: 17px;
+    background: url("../images/jlt.png") -142px -53px;
+}
+.footer-in-top>p:nth-child(2)>i:nth-child(3){
+    width: 14px;
+    height: 14px;
+    background: #2b0473;
+    border: 1px solid #462385;
+}
+.footer-in-top>p:nth-child(2)>i:nth-child(5){
+    width: 14px;
+    height: 14px;
+    background: #2b0473;
+    border: 1px solid #462385;
+    font-size: 12px;
+}
+/* 底部部分-上结束 */
+
+/* 底部部分-中间开始 */
+.footer-in-mid{
+    margin-top: 60px;
+    height: 149px;
+}
+.footer-in-mid>.fr{
+    width: 643px;
+}
+.footer-in-mid>.fr>p:nth-child(1)>a{
+    color: #ccc;
+    font-size: 14px;
+}
+.footer-in-mid>.fr>p:nth-child(1){
+    margin-bottom: 20px;
+}
+.footer-in-mid>.fr>p>span{
+    margin: 0 8px;
+    font-size: 14px;
+}
+.footer-in-mid>.fr>p:nth-child(n+2){
+    color: #8eb1bc;
+    font-size: 12px;
+    margin: 10px 0;
+}
+.footer-in-mid>.fr>p:nth-child(n+2)>a{
+    color: #8eb1bc;
+}
+/* 底部部分-中间结束 */
+
+/* 底部部分-底部开始 */
+.footer-in-bottom{
+    height: 75px;
+    width: 100%;
+    padding-top: 35px;
+    text-align: center;
+}
+.footer-in-bottom>p{
+    color: #417aa1;
+    font-size: 12px;
+    margin-bottom: 10px;
+}
+/* 底部部分-底部结束 */
+/* 底部部分结束 */

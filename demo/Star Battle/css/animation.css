@@ -1,0 +1,133 @@
+@keyframes audioOff {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: .6;
+    }
+}
+
+@keyframes audioOn {
+    0% {
+        opacity: .6;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes audioLineOff {
+    0% {
+        height: 0;
+    }
+    100% {
+        height: 52px;
+    }
+}
+
+@keyframes audioLineOn {
+    0% {
+        height: 52px;
+    }
+    100% {
+        height: 0;
+    }
+}
+
+@keyframes startMenu {
+    0% {
+        opacity: 0;
+        top: 250px;
+    }
+    60% {
+        opacity: 1;
+        top: 150px;
+    }
+    100% {
+        top: 180px;
+    }
+}
+
+@keyframes startMenuButton {
+    0% {
+        opacity: 0;
+        left: 0;
+    }
+    100% {
+        opacity: 1;
+        left: 50%;
+    }
+}
+
+@keyframes start-mianShip {
+    0% {
+        top: 48%;
+    }
+    100% {
+        top: 52%;
+    }
+}
+
+@keyframes rightBoxRankingOn{
+    0%{
+        right: -500px;
+    }
+    100%{
+        right: 0;
+    }
+}
+
+@keyframes rightBoxRankingEnd{
+    0%{
+        right: 0;
+    }
+    100%{
+        right: -500px;
+    }
+}
+
+@keyframes rightBoxHelpOn{
+    0%{
+        right: -250px;
+    }
+    100%{
+        right: 0;
+    }
+}
+
+@keyframes rightBoxHelpEnd{
+    0%{
+        right: 0;
+    }
+    100%{
+        right: -250px;
+    }
+}
+
+@keyframes diyOn {
+    0% {}
+    100% {
+        right: 10px;
+    }
+}
+
+@keyframes diyEnd {
+    0% {
+        right: 10px;
+    }
+    100% {
+        right: -150px;
+    }
+}
+
+@keyframes startWhite {
+    0% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}

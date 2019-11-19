@@ -1,0 +1,16 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    color: white;
+}
+body{
+    font-size: "微软雅黑";
+}
+.fl{
+    float: left;
+}
+.fr{
+    float: right;
+}
