@@ -12,6 +12,7 @@
 .phone-header{
     display: block;
     width: 100%;
+    z-index: 999;
 }
 
 .phone-nav-btn{
@@ -69,6 +70,9 @@
 }
 
 .phone-nav>li>a{
+    display: block;
+    width: 100%;
+    height: 100%;
     color: #000;
 }
 
